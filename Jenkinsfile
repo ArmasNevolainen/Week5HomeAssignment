@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/ArmasNevolainen/Week5HomeAssignment.git'
+                git branch:'master', url: 'https://github.com/ArmasNevolainen/Week5HomeAssignment.git'
             }
         }
         stage('Build') {
